@@ -1,0 +1,26 @@
+mongodb terminal commands:
+
+view dbs:
+> show dbs
+
+show collections(tables):
+> show collections //(use this inside any database)
+
+create db: 
+> use dbname // checks for db, (present)?uses:(create db and switch to that db) 
+
+create collection(this is same as table) and insert 1 data (data is known as document):
+> dbname.collection_name.insertOne({data})
+> dbname.collection_name.insertMany([{data},{data},{data},...])
+
+queries:
+> db.collection_name.find({specify the conditions},{key_names:1 that need to be displayed})
+
+update:
+> db.collection_name.updateOne({filter like key:value},{$set:{update the key with the new value key:new_value}})
+> db.collection_name.updateMany({filter},{$set:{update the key value pair by key:new_value}})
+
+delete:
+> db.collection_name.deleteOne({key:value})
+> db.collection_name.deleteMany({key:value})
+
