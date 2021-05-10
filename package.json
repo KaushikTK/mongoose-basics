@@ -1,0 +1,14 @@
+{
+  "name": "mongodb-tutorial",
+  "version": "1.0.0",
+  "description": "mongodb samples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kaushik",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.11.9"
+  }
+}
